@@ -1,0 +1,57 @@
+{
+  "version": 1,
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "type": "command",
+        "command": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "windows": "python \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "linux": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "osx": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "bash": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "powershell": "python \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "env": { "PII_GUARD_EVENT": "userPromptSubmitted" },
+        "timeoutSec": 10
+      }
+    ],
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "windows": "python \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "linux": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "osx": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "bash": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "powershell": "python \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "env": { "PII_GUARD_EVENT": "preToolUse" },
+        "timeoutSec": 10
+      }
+    ],
+    "userPromptTransformed": [
+      {
+        "type": "command",
+        "command": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "windows": "python \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "linux": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "osx": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "bash": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "powershell": "python \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "env": { "PII_GUARD_EVENT": "userPromptTransformed" },
+        "timeoutSec": 10
+      }
+    ],
+    "SessionEnd": [
+      {
+        "type": "command",
+        "command": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "windows": "python \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "linux": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "osx": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "bash": "python3 \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "powershell": "python \"${PLUGIN_ROOT}/scripts/prompt_guard.py\"",
+        "env": { "PII_GUARD_EVENT": "sessionEnd" },
+        "timeoutSec": 10
+      }
+    ]
+  }
+}

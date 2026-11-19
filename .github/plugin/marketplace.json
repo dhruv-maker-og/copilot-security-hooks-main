@@ -1,0 +1,19 @@
+{
+  "name": "security-hooks-marketplace",
+  "owner": {
+    "name": "TrustGate"
+  },
+  "metadata": {
+    "description": "Approved Copilot sensitive-data security hook",
+    "version": "1.2.0"
+  },
+  "plugins": [
+    {
+      "name": "sensitive-data-guard",
+      "description": "Returns a Copilot block decision for sensitive prompts, quarantines sessions, redacts transformed prompts, and denies unsafe tool use.",
+      "version": "1.2.0",
+      "source": "plugins/sensitive-data-guard",
+      "keywords": ["security", "sensitive-data", "pii", "secrets", "hooks"]
+    }
+  ]
+}

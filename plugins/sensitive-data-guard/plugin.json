@@ -1,0 +1,8 @@
+{
+  "name": "sensitive-data-guard",
+  "description": "Returns a Copilot block decision for sensitive prompts, quarantines sessions, redacts transformed prompts, and denies unsafe tool use.",
+  "version": "1.2.0",
+  "license": "MIT",
+  "keywords": ["security", "sensitive-data", "pii", "secrets", "hooks"],
+  "hooks": "hooks.json"
+}
